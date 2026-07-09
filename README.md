@@ -61,8 +61,8 @@ RAG/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/sdutta24/AI_Demo.git
-cd AI_Demo
+git clone https://github.com/sdutta24/RAG-Demo.git
+cd RAG-Demo
 ```
 
 ### 2. Install Python dependencies
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 
 ```
 GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama3-8b-8192
+GROQ_MODEL="openai/gpt-oss-20b"
 ```
 
 ### 4. Start Qdrant
@@ -124,7 +124,7 @@ According to the "Casual Leave" section, every confirmed employee is entitled to
 To use a different document, update `GITHUB_RAW_URL` in `main.py`:
 
 ```python
-GITHUB_RAW_URL = "https://raw.githubusercontent.com/your-username/your-repo/main/your-document.txt"
+GITHUB_RAW_URL = "https://raw.githubusercontent.com/sdutta24/AI_Demo/refs/heads/main/techcorp_leave_attendance_policies.txt)"
 ```
 
 Then re-run `main.py` — the pipeline will re-ingest the new document automatically.
@@ -164,6 +164,4 @@ Simple and fast, but has known limitations — it can split sentences mid-way, l
 
 ---
 
-## License
 
-MIT
