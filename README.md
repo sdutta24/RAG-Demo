@@ -1,4 +1,4 @@
-# document-qa-rag
+# RAG
 
 A proof-of-concept RAG pipeline that answers plain English questions from a document — with source citations. Built entirely with a local/lightweight stack. No OpenAI. Minimal cost.
 
@@ -37,7 +37,7 @@ User asks a question → embed the question → semantic search against stored c
 ## Project Structure
 
 ```
-document-qa-rag/
+RAG/
 │
 ├── main.py                              # Entry point — full pipeline
 ├── techcorp_leave_attendance_policies.txt  # Sample document
