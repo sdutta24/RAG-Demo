@@ -1,0 +1,24 @@
+# Core
+python-dotenv==1.0.1
+requests==2.32.3
+
+# Document parsing and chunking
+docling==2.14.0
+docling-core==2.14.0
+
+# Embeddings
+sentence-transformers==2.7.0
+
+# Vector database
+qdrant-client==1.9.1
+
+# LLM
+groq==0.9.0
+
+# LangChain (Implementation 2)
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-groq==0.1.9
+langchain-huggingface==0.0.3
+langchain-qdrant==0.1.4
+langchain-docling==0.1.0
