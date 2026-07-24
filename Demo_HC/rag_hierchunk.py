@@ -101,7 +101,7 @@ def rag(query : str,top_k : int = 5):
     response=groq_client.chat.completions.create(
         model=os.getenv("GROQ_MODEL"),
         messages=[
-        {"role" : "system", "content" : "SYSTEM_PROMPT"},
+        {"role" : "system", "content" : SYSTEM_PROMPT},
         {"role" : "user", "content" : user_message},
         ],
         temperature=0.2,      
