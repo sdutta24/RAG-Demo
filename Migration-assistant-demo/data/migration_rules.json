@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "Oracle NVL Function",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "SQL",
+    "category": "SQL Function",
+    "complexity": "Low",
+    "rule": "Oracle NVL function can be migrated to Snowflake using the COALESCE function. Verify datatype compatibility when the arguments have different data types."
+  },
+  {
+    "id": 2,
+    "title": "Oracle DECODE Function",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "SQL",
+    "category": "SQL Function",
+    "complexity": "Low",
+    "rule": "Oracle DECODE expressions should generally be converted to CASE expressions in Snowflake for better readability and ANSI SQL compatibility."
+  },
+  {
+    "id": 3,
+    "title": "Oracle CONNECT BY",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "SQL",
+    "category": "Hierarchical Query",
+    "complexity": "High",
+    "rule": "Oracle hierarchical queries using CONNECT BY PRIOR should be redesigned using recursive common table expressions in Snowflake."
+  },
+  {
+    "id": 4,
+    "title": "Oracle Autonomous Transactions",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "Stored Procedure",
+    "category": "Transaction",
+    "complexity": "High",
+    "rule": "Oracle autonomous transactions do not have a direct equivalent in Snowflake stored procedures and usually require application or process redesign."
+  },
+  {
+    "id": 5,
+    "title": "Oracle Exception Handling",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "Stored Procedure",
+    "category": "Exception Handling",
+    "complexity": "Medium",
+    "rule": "Oracle PL SQL exception handling should be reviewed and converted to Snowflake Scripting exception handling where supported."
+  },
+  {
+    "id": 6,
+    "title": "Oracle Sequences",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "DDL",
+    "category": "Sequence",
+    "complexity": "Low",
+    "rule": "Oracle sequences can be migrated to Snowflake sequences using CREATE SEQUENCE. Verify increment values and usage patterns."
+  },
+  {
+    "id": 7,
+    "title": "Oracle Temporary Tables",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "DDL",
+    "category": "Temporary Table",
+    "complexity": "Medium",
+    "rule": "Oracle global temporary tables should be evaluated carefully because temporary table behavior and session scope may differ in Snowflake."
+  },
+  {
+    "id": 8,
+    "title": "Oracle Dynamic SQL",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "Stored Procedure",
+    "category": "Dynamic SQL",
+    "complexity": "High",
+    "rule": "Oracle dynamic SQL using EXECUTE IMMEDIATE can be migrated to Snowflake Scripting dynamic SQL, but identifier handling and parameter binding should be validated."
+  },
+  {
+    "id": 9,
+    "title": "Oracle NUMBER Datatype",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "DDL",
+    "category": "Datatype",
+    "complexity": "Medium",
+    "rule": "Oracle NUMBER columns should be mapped to Snowflake NUMBER with appropriate precision and scale based on source data profiling."
+  },
+  {
+    "id": 10,
+    "title": "Oracle MERGE Statement",
+    "source_db": "Oracle",
+    "target_db": "Snowflake",
+    "artifact_type": "SQL",
+    "category": "DML",
+    "complexity": "Medium",
+    "rule": "Oracle MERGE statements are generally supported in Snowflake, but source query behavior and duplicate matching conditions should be validated."
+  }
+]
